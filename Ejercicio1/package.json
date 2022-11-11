@@ -1,0 +1,12 @@
+{
+  "name": "openbootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hola, este es mi primer ejercicio con Node en el mejor Bootcamp de programacion del mundo\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
