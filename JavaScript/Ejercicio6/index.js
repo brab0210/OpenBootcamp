@@ -22,7 +22,8 @@ let peliculas = [
     fecha: new Date("07/15/2013"),
   },
 ];
-
+// new Date(2013,0,13)
+// año - mes - dia
 let fechaEnero = new Date("01/01/2010");
 let peliculaFecha = peliculas.filter((element) => element.fecha > fechaEnero);
 
