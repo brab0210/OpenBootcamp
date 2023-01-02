@@ -28,9 +28,19 @@ const logger = winston.createLogger({
   ],
 });
 
+function mostrarError() {
+  throw new Error("esto es un error");
+}
+
 logger.log("silly", "127.0.0.1 - there's no place like home");
 logger.log("debug", "127.0.0.1 - there's no place like home");
 logger.log("verbose", "127.0.0.1 - there's no place like home");
 logger.log("info", "127.0.0.1 - there's no place like home");
 logger.log("warn", "127.0.0.1 - there's no place like home");
 logger.log("error", "127.0.0.1 - there's no place like home");
+
+try {
+  mostrarError();
+} catch (error) {
+  logger.log("error", error);
+}
